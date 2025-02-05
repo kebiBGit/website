@@ -95,8 +95,8 @@ ul li {
 }
 #header .header-content {
 	display: flex;
-    align-items: center;  /* Align logo and menu vertically */
-    justify-content: space-between; /* Space out logo and nav */
+    align-items: center;
+    justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1170px;
 	padding: 40px 0;
@@ -115,7 +115,7 @@ ul li {
 	text-transform: uppercase;
 }
 */
-header img {
+.header-content .logo img {
     max-width: 80px;
     height: auto;
     display: inline-block;
