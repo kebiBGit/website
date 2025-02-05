@@ -50,3 +50,28 @@ $(document).ready(function() {
 		nav.toggleClass('open');
 	});
 });
+//New Addition
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all anchor links that point to sections on the same page
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            
+            // Get the target section's id from the link
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offset = 50; // Adjust how much higher you want
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - offset;
+
+                // Scroll to the target section with smooth behavior
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth" // Smooth scrolling effect
+                });
+            }
+        });
+    });
+});

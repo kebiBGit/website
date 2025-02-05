@@ -121,6 +121,12 @@ ul li {
     display: inline-block !important;
 	margin-right: 720px !important;
 }
+.header-content .logo img:hover {
+    transform: scale(1.1) !important;
+    filter: brightness(80%);
+	transition: transform 0.3s,filter 0.3s;
+
+}
 #header.fixed {
 	background-color: rgba(255, 255, 255, 0.75);
 }
@@ -146,7 +152,7 @@ ul li {
 	display: inline-block;
 }
 .navigation a {
-	color: #ffffff;
+	color: #ababab;
 	font-size: 13px;
 	font-weight: 400;
 	letter-spacing: 2px;
@@ -322,6 +328,12 @@ ul li {
 	font-weight: 450;
 	line-height: 1.5;
 	margin-bottom: 1%;
+}
+#intro-scroll {
+    position: relative;
+    top: -175px;
+    visibility: hidden;
+	transition: top 0.3s;
 }
 /* ==========================================================================
 	$Teams
