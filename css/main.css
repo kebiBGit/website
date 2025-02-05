@@ -94,6 +94,9 @@ ul li {
 	z-index: 999;
 }
 #header .header-content {
+	display: flex;
+    align-items: center;  /* Align logo and menu vertically */
+    justify-content: space-between; /* Space out logo and nav */
 	margin: 0 auto;
 	max-width: 1170px;
 	padding: 40px 0;
@@ -103,13 +106,21 @@ ul li {
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
 }
+/*
 #header .logo {
-	font-size: 27px;
+	image-orientation: landscape;
 	color: #ffffff;
 	letter-spacing: 3px;
 	font-weight: 300;
 	float: left;
 	text-transform: uppercase;
+}
+*/
+header img {
+    max-width: 80px;
+    height: auto;
+    display: inline-block;
+	margin-right: 720px;
 }
 #header.fixed {
 	background-color: rgba(255, 255, 255, 0.75);
